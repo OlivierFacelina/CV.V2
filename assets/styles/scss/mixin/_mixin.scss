@@ -1,0 +1,22 @@
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin d-flex($justify, $align, $gap) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  gap: $gap;
+}
+
+@mixin hover($color) {
+  color: $color
+}
+
+@mixin title {
+  font-size: 30px;
+  padding: 5vh;
+  text-transform: uppercase;
+}

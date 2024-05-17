@@ -1,0 +1,12 @@
+// Base
+@use './scss/base/_reset.scss';
+
+// Component
+@use './scss/component/link';
+
+// Layout
+@use './scss/layout/_nav.scss';
+@use './scss/layout/footer';
+
+// Page
+@use './scss/page/home';

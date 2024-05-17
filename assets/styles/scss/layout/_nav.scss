@@ -1,0 +1,19 @@
+@use '../mixin/_mixin.scss' as m;
+@import '../variable/_variable.scss';
+
+.nav {
+  background-color: $grey;
+  height: 10vh;
+  @include m.d-flex($justify: space-between, $align: center, $gap: 5vh);
+  padding: 0 5vh 0 5vh;
+
+  &__title a {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: $green;
+  }
+
+  &__link {
+    @include m.d-flex($justify: space-around, $align: center, $gap: 5vh);
+  }
+}

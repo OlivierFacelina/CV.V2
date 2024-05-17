@@ -1,0 +1,21 @@
+@import '../variable/_variable.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  background-color: $black;
+  color: $white;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  color: $green;
+  text-align: center;
+}

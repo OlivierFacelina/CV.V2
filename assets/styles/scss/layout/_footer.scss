@@ -1,0 +1,35 @@
+@use '../mixin/mixin' as m;
+@import '../variable/variable';
+
+.footer {
+  margin: 5vh 0 5vh 0;
+  &__contact, &__content {
+    @include m.d-flex($justify: space-around, $align: center, $gap: 3vh);
+    margin-bottom: 5vh;
+  }
+
+  &__content {
+    padding: 5vh 0 5vh 0;
+    background-color: $grey;
+
+    &__nav {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__nav a {
+      margin-top: 2vh;
+      color: $white;
+    }
+  }
+
+  h3 {
+    text-align: center;
+    color: $green;
+    font-weight: bold;
+  }
+
+  h4 {
+    text-align: center;
+  }
+}

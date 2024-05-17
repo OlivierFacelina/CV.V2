@@ -1,0 +1,97 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello HomeController!{% endblock %}
+
+{% block body %}
+{{ include('header.html.twig')}}
+<section class="home">
+    <div class="stars-container">
+        <div class="stars">
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+        </div>
+    </div>
+
+    <div>
+        <h1>Bienvenue sur mon Portfolio !</h1>
+        <h2>Olivier FACELINA ~ Etudiant (développeur web junior full stack)</h2>
+    </div>
+</section>
+<section class="presentation">
+    <h2 class="presentation__title">Présentation</h2>
+    <div class="presentation__content">
+            <img src="{{asset('images/Olivier_F.jpg')}}" alt="Olivier FACELINA">
+
+        <div class="presentation__content__text">
+            <p>Salut ! Bienvenue à toi ! Non, tu ne t'es pas perdu, tu es bel et bien au bon endroit !
+            <br>Je m'appelle Olivier FACELINA et je suis actuellement étudiant en 2e année de ba-
+            <br>chelor Chef de Projet Développement et Intelligence Artificielle à La Manu (école
+            <br>privée située sur Amiens). Ce portfolio a été conçu pour vous montrer mon engage-
+            <br>ment et ma passion pour ce cursus.<br><br></p>
+            <p>En tant que développeur full stack junior, j'ai une préférence marquée pour le lan-
+            <br>gage PHP et ses frameworks, notamment Symfony. Au cours de mon bachelor, qui
+            <br>se déroule sur trois années, j'ai eu l'opportunité d'approfondir mes compétences
+            <br>dans ces technologies. Après l'obtention de mon bachelor, je souhaite poursuivre
+            <br>mes études en réalisant un master MIAGE (Méthodes Informatiques Appliquées à
+            <br>la Gestion des Entreprises) à Amiens. Mon objectif professionnel est de devenir dé-
+            <br>veloppeur web full stack ou développeur back-end spécialisé en PHP/Symfony,
+            <br>deux parcours qui m'attirent et pour lesquels j'ai une véritable passion.<br><br></p>
+            <p>Vous êtes actuellement sur la page d'accueil de mon portfolio. Ce site a été structuré
+            <br>de manière à vous offrir une navigation fluide entre les différentes sections, grâce
+            <br>au menu de navigation.<br><br></p>
+            <p>Je vous invite donc à parcourir les différentes pages de ce portfolio pour découvrir
+            <br>mes projets, mon parcours et mes loisirs !</p>
+    </div>
+</section>
+{{ include('footer.html.twig') }}
+{% endblock %}
+
+

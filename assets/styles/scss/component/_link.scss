@@ -1,0 +1,23 @@
+@use '../mixin/mixin' as m;
+@import '../variable/variable';
+
+
+// Header
+.nav {
+  &__link a {
+  font-size: 20px;
+  color: $white;
+}
+
+&__link a:hover {
+  @include m.hover($color: $green)
+}
+}
+
+// Footer
+.footer {
+  &__contact a {
+    font-size: 20px;
+    color: $white;
+  }
+}
