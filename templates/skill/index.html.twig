@@ -1,22 +1,16 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello SkillController!{% endblock %}
+{% block title %}{{ parent() }} - Compétences{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
+{{ include('header.html.twig')}}
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
+<section class="skills">
+    <h2 class="skills__title">Compétences</h2>
+    <div>
+    </div>
+</section>
 
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code>C:/Users/Olivier/Desktop/CV/src/Controller/SkillController.php</code></li>
-        <li>Your template at <code>C:/Users/Olivier/Desktop/CV/templates/skill/index.html.twig</code></li>
-    </ul>
-</div>
+{{ include('footer.html.twig') }}
 {% endblock %}
 
-{% extends 'footer.html.twig' %}
