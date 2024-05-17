@@ -125,9 +125,6 @@
 .presentation {
   background-color: $grey;
   padding-bottom: 5vh;
-  &__title {
-    @include m.title();
-  }
 
   &__content {
     @include m.d-flex($justify: center, $align: center, $gap: 10vh);

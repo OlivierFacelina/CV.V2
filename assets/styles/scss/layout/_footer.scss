@@ -17,10 +17,14 @@
       flex-direction: column;
     }
 
-    &__nav a {
+    &__nav a, &__legal p {
       margin-top: 2vh;
       color: $white;
     }
+
+    // &__legal {
+    //   margin-top: 5vh;
+    // }
   }
 
   h3 {

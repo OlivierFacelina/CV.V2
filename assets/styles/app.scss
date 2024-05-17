@@ -3,10 +3,12 @@
 
 // Component
 @use './scss/component/link';
+@use './scss/component/title';
 
 // Layout
 @use './scss/layout/_nav.scss';
 @use './scss/layout/footer';
 
 // Page
+@use './scss/page/career';
 @use './scss/page/home';

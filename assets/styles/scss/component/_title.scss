@@ -1,0 +1,7 @@
+@use '../mixin/mixin' as m;
+
+.presentation, .timeline {
+  &__title {
+    @include m.title();
+  }
+}
