@@ -8,6 +8,14 @@
     margin-bottom: 5vh;
   }
 
+  &__contact i {
+    margin-right: 1vh
+  }
+
+  &__contact a {
+    text-decoration: underline;
+  }
+
   &__content {
     padding: 5vh 0 5vh 0;
     background-color: $grey;
