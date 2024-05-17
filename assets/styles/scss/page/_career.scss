@@ -1,5 +1,7 @@
 @import '../variable/variable';
 
+// ---------------------------------- Parcours ----------------------------------
+
 :root {
   --primary-color: $grey;
   --background-color: $black;
@@ -10,6 +12,7 @@
 .timeline {
   background: var(--primary-color);
   margin: 20px auto;
+  margin-bottom: 10vh;
   padding: 20px;
   display: flex;
   justify-content: center;
@@ -18,10 +21,10 @@
 /* Card container */
 .card {
   position: relative;
-  max-width: 400px;
+  max-width: 600px;
 }
 
-/* setting padding based on even or odd */
+/* Réglage de l'espacement en fonction des valeurs paires ou impaires */
 .card:nth-child(odd) {
   padding: 30px 0 30px 30px;
 }
@@ -36,7 +39,7 @@
   border: solid $green;
 }
 
-/* Setting the border of top, bottom, left */
+/* On définit la bordure */
 .card:nth-child(odd)::before {
   left: 0px;
   top: -4.5px;
@@ -45,7 +48,7 @@
   border-radius: 50px 0 0 50px;
 }
 
-/* Setting the top and bottom to "-5px" because earlier it was out of a pixel in mobile devices */
+/* Réglage du haut et du bas à « -5px » parce qu'auparavant il y avait un écart d'un pixel sur les appareils mobiles */
 @media only screen and (max-width: 400px) {
   .card:nth-child(odd)::before {
     top: -5px;
@@ -53,7 +56,7 @@
   }
 }
 
-/* Setting the border of top, bottom, right */
+/* Définition de la bordure du haut, du bas et de la droite */
 .card:nth-child(even)::before {
   right: 0;
   top: 0;
@@ -62,25 +65,25 @@
   border-radius: 0 50px 50px 0;
 }
 
-/* Removing the border if it is the first card */
+/* Suppression de la bordure s'il s'agit de la première carte */
 .card:first-child::before {
   border-top: 0;
   border-top-left-radius: 0;
 }
 
-/* Removing the border if it is the last card  and it's odd */
+/* Suppression de la bordure s'il s'agit de la dernière carte et qu'elle est impaire */
 .card:last-child:nth-child(odd)::before {
   border-bottom: 0;
   border-bottom-left-radius: 0;
 }
 
-/* Removing the border if it is the last card  and it's even */
+/* Suppression de la bordure s'il s'agit de la dernière carte et qu'elle est paire */
 .card:last-child:nth-child(even)::before {
   border-bottom: 0;
   border-bottom-right-radius: 0;
 }
 
-/* Information about the timeline */
+/* Information de la timeline */
 .info {
   display: flex;
   flex-direction: column;
@@ -90,7 +93,7 @@
   padding: 10px;
 }
 
-/* Title of the card */
+/* Titre de la card */
 .title {
   color: $green;
   position: relative;
@@ -107,26 +110,39 @@
   border: 3px solid $green;
 }
 
+.info h3 {
+  font-size: 24px;
+}
+
 .info h4 {
+  font-size: 20px;
   color: $white;
 }
 
 .info h5 {
+  font-size: 18px;
   font-style: italic;
   margin-bottom: 2vh;
 }
 
-/* text right if the card is even  */
+/* Texte à droite si la carte est paire */
 .card:nth-child(even) > .info > .title {
   text-align: right;
 }
 
-/* setting dot to the left if the card is odd */
+/* Mise en place d'un point à gauche si la carte est impaire */
 .card:nth-child(odd) > .info > .title::before {
   left: -45px;
 }
 
-/* setting dot to the right if the card is odd */
+/* Mise en place d'un point à droite si la carte est impaire */
 .card:nth-child(even) > .info > .title::before {
   right: -45px;
+}
+
+// ---------------------------------- Experience ----------------------------------
+
+.experience {
+  padding-bottom: 5vh;
+  background-color: $grey;
 }
