@@ -1,0 +1,43 @@
+@use '../mixin/mixin' as m;
+@import '../variable/variable';
+
+.skills {
+  &__content {
+    @include m.d-flex($justify: space-around, $align: center, $gap: 5vh);
+
+    h3 {
+      margin-bottom: 3vh;
+    }
+
+    &__btn {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .backend, .frontend, .versioning, .other {
+        display: block;
+    }
+
+    button {
+      background-color: $green;
+      border-radius: 20px;
+      color: $grey;
+      padding: 1em 1.5em;
+      white-space: nowrap;
+      display: flex;
+      align-items: center;
+      gap: 1vh;
+      min-width: 3vw;
+      height: auto;
+
+      p {
+        font-size: 1.2em;
+      }
+
+      .fa {
+        font-size: 1.5em;
+      }
+    }
+  }
+
+}
