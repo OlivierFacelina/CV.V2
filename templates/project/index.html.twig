@@ -1,21 +1,57 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello ProjectController!{% endblock %}
+{% block title %}{{ parent() }} - Projets{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
+{{ include('header.html.twig')}}
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
+<section class="projects">
+    <h2 class="projects__title">Mes projets</h2>
+    <h4>Voici quelques exemples de projets. Vous avez la possibilité de cliquer sur un projet afin de voir ses détails.</h4>
 
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code>C:/Users/Olivier/Desktop/CV/src/Controller/ProjectController.php</code></li>
-        <li>Your template at <code>C:/Users/Olivier/Desktop/CV/templates/project/index.html.twig</code></li>
-    </ul>
-</div>
+    <div class="projects__content">
+        {% set projects = [
+            {'image': 'images/ig.png', 'title': 'Projet Instant Gaming', 'description': 'Description du projet Instant Gaming.', 'link': 'https://olivierfacelina.github.io/Instant-Gaming-Projet/', 'languages': 'HTML, CSS'},
+            {'image': 'images/material_management.png', 'title': 'Material Management', 'description': 'Description du projet Material Management.', 'link': 'https://olivierfacelina.github.io/Instant-Gaming-Projet/', 'languages': 'Symfony, Sass, Javascript'},
+            {'image': 'images/ig.png', 'title': 'Projet Instant Gaming', 'description': 'Description du projet Instant Gaming.', 'link': 'https://olivierfacelina.github.io/Instant-Gaming-Projet/', 'languages': 'HTML, CSS'},
+            {'image': 'images/ig.png', 'title': 'Projet Instant Gaming', 'description': 'Description du projet Instant Gaming.', 'link': 'https://olivierfacelina.github.io/Instant-Gaming-Projet/', 'languages': 'HTML, CSS'},
+            {'image': 'images/ig.png', 'title': 'Projet Instant Gaming', 'description': 'Description du projet Instant Gaming.', 'link': 'https://olivierfacelina.github.io/Instant-Gaming-Projet/', 'languages': 'HTML, CSS'}
+        ] %}
+
+        {% for project in projects %}
+        <button onclick="openModal({{ loop.index0 }})">
+            <div class="projects__content__image">
+                <img src="{{ asset(project.image) }}" alt="{{ project.title }}">
+            </div>
+        </button>
+        {% endfor %}
+    </div>
+
+    {% for project in projects %}
+    <div class="modal" id="modal-{{ loop.index0 }}">
+        <div class="modal__close" onclick="closeModal({{ loop.index0 }})"><i class="fa-solid fa-xmark"></i></div>
+        <div class="modal__header">
+            <h2 class="modal__header__title">{{ project.title }}</h2>
+        </div>
+        <div class="modal__body">
+            <div class="modal__body__content">
+                <div class="modal__body__content__image">
+                    <img src="{{ asset(project.image) }}">
+                </div>
+                <div class="modal__body__content__text">
+                    <p>{{ project.description }}</p>
+                    <a href="{{ project.link }}">Découvrez le site ici</a>
+                </div>
+            </div>
+            <h5>Langages utilisés</h5>
+            <p>{{ project.languages }}</p>
+        </div>
+        <div class="modal__footer">
+            <button class="modal__footer__button" onclick="closeModal({{ loop.index0 }})">Fermer</button>
+        </div>
+    </div>
+    {% endfor %}
+</section>
+
+{{ include('footer.html.twig') }}
 {% endblock %}
-
