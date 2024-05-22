@@ -5,23 +5,23 @@
 {% block body %}
 {{ include('header.html.twig')}}
 
-<section class="skills">
-    <h2 class="skills__title">Compétences</h2>
-    <div class="skills__content">
-        <div class="skills__content backend">
+<section class="hard__skills">
+    <h2 class="hard__skills__title">Compétences techniques (hard skills)</h2>
+    <div class="hard__skills__content">
+        <div class="hard__skills__content backend">
             <h3>Dévéloppement back-end</h3>
-            <div class="skills__content__btn">
+            <div class="hard__skills__content__btn">
                 <button><i class="fa-brands fa-python fa"></i><p>Python</p></button>
                 <button><i class="fa-brands fa-php fa"></i><p>PHP</p></button>
-                <button><i class="fa-brands fa-database fa"></i><p>MySQL</p></button>
+                <button><i class="fa-solid fa-database fa"></i><p>MySQL</p></button>
                 <button><i class="fa-brands fa-java fa"></i><p>Java</p></button>
                 <button><i class="fa-brands fa-symfony fa"></i><p>Symfony</p></button>
-                <button><p>C#</p></button>
+                <button><img src="{{asset('images/csharp.png')}}" class="csharp" alt="C#"><p>C#</p></button>
             </div>
         </div>
-        <div class="skills__content frontend">
+        <div class="hard__skills__content frontend">
             <h3>Développement front-end</h3>
-            <div class="skills__content__btn">
+            <div class="hard__skills__content__btn">
                 <button><i class="fa-brands fa-html5 fa"></i><p>HTML</p></button>
                 <button><i class="fa-brands fa-css3 fa"></i><p>CSS</p></button>
                 <button><i class="fa-brands fa-bootstrap fa"></i><p>Bootstrap</p></button>
@@ -32,17 +32,59 @@
                 <button><i class="fa-brands fa-node fa"></i><p>NodeJS</p></button>
             </div>
         </div>
-        <div class="skills__content versioning">
-            <h3>Devops</h3>
-            <div class="skills__content__btn">
+        <div class="hard__skills__content versioning">
+            <h3>Versioning</h3>
+            <div class="hard__skills__content__btn">
                 <button><i class="fa-brands fa-git fa"></i><p>Git</p></button>
+                <button><i class="fa-brands fa-github fa"></i><p>Github</p></button>
+                <button><i class="fa-solid fa-terminal fa"></i><p>Commandes</p></button>
                 <button><i class="fa-brands fa-docker fa"></i><p>Docker</p></button>
-                <button><p>Commandes</p></button>
+                <button><i class="fa-regular fa-circle fa"></i><p>CircleCI</p></button>
             </div>
         </div>
-        <div class="skills__content other">
+        <div class="hard__skills__content cms">
             <h3>CMS</h3>
-            <p>Test</p>
+            <div class="hard__skills__content__btn">
+                <button><i class="fa-brands fa-wordpress fa"></i><p>Wordpress</p></button>
+                <button><i class="fa-brands fa-elementor fa"></i><p>Elementor</p></button>
+                <button><img src="{{asset('images/divi.png')}}" class="divi" alt="Divi"><p>Divi</p></button>
+                <button><img src="{{asset('images/woocommerce.png')}}" class="woocommerce" alt="WooCommerce"><p>WooCommerce</p></button>
+                <button><img src="{{asset('images/prestashop.png')}}" class="prestashop" alt="Prestashop"><p>Prestashop</p></button>
+            </div>
+        </div>
+        <div class="hard__skills__content other">
+            <h3>Logiciels</h3>
+            <div class="hard__skills__content__btn">
+                <button><img src="{{asset('images/adobe.png')}}" class="adobe" alt="Adobe"><p>Adobe</p></button>
+                <button><img src="{{asset('images/illustrator.png')}}" class="illustrator" alt="Illustrator"><p>Illustrator</p></button>
+                <button><img src="{{asset('images/photoshop.png')}}" class="photoshop" alt="Photoshop"><p>Photoshop</p></button>
+                <button><img src="{{asset('images/indesign.png')}}" class="indesign" alt="InDesign"><p>InDesign</p></button>
+                <button><i class="fa-brands fa-figma fa"></i><p>Figma</p></button>
+                <button><img src="{{asset('images/capcut.png')}}" class="capcut" alt="CapCut"><p>CapCut</p></button>
+                <button><i class="fa-solid fa-code fa"></i><p>Visual Studio Code</p></button>
+                <button><i class="fa-solid fa-code fa"></i><p>Visual Studio Community</p></button>
+                <button><img src="{{asset('images/eclipse.png')}}" class="eclipse" alt="Eclipse"><p>Eclipse IDE</p></button>
+                <button><i class="fa-brands fa-unity fa"></i><p>Unity</p></button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="soft__skills">
+    <h2 class="soft__skills__title">Compétences comportementales (softs skills)</h2>
+    <div class="soft__skills__content">
+        <div class="soft__skills__content__btn">
+            <button><i class="fa-solid fa-arrow-rotate-left fa"></i><p>Feedback</p></button>
+            <button><i class="fa-solid fa-bullseye fa"></i><p>Prise de décision</p></button>
+            <button><i class="fa-brands fa-teamspeak fa"></i><p>Management à distance</p></button>
+            <button><i class="fa-solid fa-people-group fa"></i><p>Esprit d'équipe</p></button>
+            <button><i class="fa-solid fa-calendar fa"></i><p>Organisation</p></button>
+            <button><i class="fa-solid fa"></i><p>Adaptabilité</p></button>
+            <button><i class="fa-solid fa-tty fa"></i><p>Communication</p></button>
+            <button><i class="fa-solid fa"></i><p>Gestion du stress</p></button>
+            <button><i class="fa-solid fa-face-smile fa"></i><p>Gestion des émotions</p></button>
+            <button><img src="{{asset('images/autonomy.png')}}" class="autonomy" alt="Autonomie"><p>Autonomie</p></button>
+            <button><i class="fa-solid fa-lightbulb fa"></i><p>Résolution de problèmes</p></button>
         </div>
     </div>
 </section>

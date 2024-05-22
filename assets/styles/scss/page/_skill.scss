@@ -1,21 +1,33 @@
 @use '../mixin/mixin' as m;
 @import '../variable/variable';
 
-.skills {
+.hard__skills, .soft__skills {
+  margin-bottom: 5vh;
   &__content {
-    @include m.d-flex($justify: space-around, $align: center, $gap: 5vh);
+    margin-top: 3vh;
+    @include m.d-flex($justify: center, $align: center, $gap: 5vh);
+    flex-wrap: wrap;
 
     h3 {
       margin-bottom: 3vh;
+      text-align: center;
     }
 
     &__btn {
       display: flex;
       flex-wrap: wrap;
+
+      img {
+        width: 1.2vw;
+      }
+
+      .photoshop, .eclipse {
+        width: 2.1vw;
+      }
     }
 
-    .backend, .frontend, .versioning, .other {
-        display: block;
+    .backend, .frontend, .versioning, .cms, .other {
+      display: block;
     }
 
     button {
@@ -25,10 +37,13 @@
       padding: 1em 1.5em;
       white-space: nowrap;
       display: flex;
+      justify-content: center;
       align-items: center;
       gap: 1vh;
       min-width: 3vw;
       height: auto;
+      flex: 1 1 calc(25% - 10px);
+      margin: 5px;
 
       p {
         font-size: 1.2em;
@@ -40,4 +55,9 @@
     }
   }
 
+}
+
+.soft__skills {
+  background-color: $grey;
+  padding-bottom: 10vh;
 }
