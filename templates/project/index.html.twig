@@ -11,21 +11,39 @@
 
     <div class="projects__content">
         {% set projects = [
-            {'image': 'images/ig.png', 'title': 'Projet Instant Gaming', 'description': 'Description du projet Instant Gaming.', 'link': 'https://olivierfacelina.github.io/Instant-Gaming-Projet/', 'languages': 'HTML, CSS'},
-            {'image': 'images/material_management.png', 'title': 'Material Management', 'description': 'Description du projet Material Management.', 'link': 'https://olivierfacelina.github.io/Instant-Gaming-Projet/', 'languages': 'Symfony, Sass, Javascript'},
-            {'image': 'images/ig.png', 'title': 'Projet Instant Gaming', 'description': 'Description du projet Instant Gaming.', 'link': 'https://olivierfacelina.github.io/Instant-Gaming-Projet/', 'languages': 'HTML, CSS'},
-            {'image': 'images/ig.png', 'title': 'Projet Instant Gaming', 'description': 'Description du projet Instant Gaming.', 'link': 'https://olivierfacelina.github.io/Instant-Gaming-Projet/', 'languages': 'HTML, CSS'},
-            {'image': 'images/ig.png', 'title': 'Projet Instant Gaming', 'description': 'Description du projet Instant Gaming.', 'link': 'https://olivierfacelina.github.io/Instant-Gaming-Projet/', 'languages': 'HTML, CSS'}
+            {'image': 'images/fansite.png', 'title': 'Fan-Site', 'description': "Sur une durée de 3 jours, j'ai réalisé un site sur un groupe de musique, 'Muse' avec mon camarade de classe. On était par groupe de 2. Le but de ce projet était de rendre ce site accessible à toutes personnes.", 'link': 'https://olivierfacelina.github.io/Fan-Site/', 'languages': 'HTML, CSS', 'date': 'Avril 2024'},
+            {'image': 'images/ig.png', 'title': 'Ludothèque', 'description': "Sur une durée d'un mois, j'ai fait un site Ludothèque sur Wordpress, mais en développant en PHP (avec notamment les Custom Post Type, les taxonomies). Ce site permet d'afficher la liste des jeux de société, ses détails et ses collaborateurs.", 'link': 'https://github.com/OlivierFacelina/Ludotheque', 'languages': 'Wordpress, PHP, CSS', 'date': 'Avril 2024'},
+            {'image': 'images/material_management.png', 'title': 'Material Management', 'description': "Sur une durée de 2/3 semaines, j'ai réalisé un site pour LaManu qui leur permettra de gérer les commandes de matériel qu'ils auront. Ce projet était par groupe de 3 étudiants, pour consolider ce qu'on a vu en Symfony.", 'link': 'https://github.com/OlivierFacelina/Material_management', 'languages': 'Symfony, Twig, Sass, Javascript', 'date': 'Mars 2024'},
+            {'image': 'images/sitecorporate.png', 'title': 'Site Corporate', 'description': "Réalisation d'un projet personnel de notre choix en Symfony sur une durée de 3 jours. Etant fan de tennis, j'ai choisi de le faire sur Wimbledon et son histoire.", 'link': 'https://site-corporate.onrender.com/?classId=2a07dd82-0650-4e74-849f-fcaf51e921cd&assignmentId=fc744553-dbc0-4459-9d61-f697001b9d18&submissionId=0c57768a-f9b1-8c83-d484-1f530ae657a5', 'languages': 'Symfony, Twig, Sass', 'date': 'Février 2024'},
+            {'image': 'images/rentalbike.png', 'title': 'Rental bike', 'description': "Sur une durée d'un mois, avec l'école, il fallait reproduire un site de location de vélos avec le design de notre choix. Il fallait donc gérer les réservations des vélos en fonction de leur état, disponibilité, ou leur immatriculation. C'était un travail par groupe de 2.", 'link': 'https://github.com/OlivierFacelina/Rental_bike', 'languages': 'PHP, Sass, JavaScript', 'date': 'Décembre 2023'},
+            {'image': 'images/rick.png', 'title': 'TD Rick and Morty', 'description': "Sur une durée de 2 jours, j'ai dû manipuler les données d'une API afin d'afficher les informations en React. J'ai choisi le thème sur Rick and Morty. C'était un TD de découverte de ce langage.", 'languages': 'React, ViteJS', 'date': 'Novembre 2023'},
+            {'image': 'images/technology.png', 'title': 'New Technologies', 'description': "Sur une durée de 2 jours, j'ai dû réaliser la page d'accueil d'un site qui vend des appareils électroniques.", 'languages': 'HTML, CSS', 'date': 'Novembre 2023'},
+            {'image': 'images/cookin.png', 'title': "Cookin' Camp", 'description': "Sur une durée de 3 jours, j'ai réalisé un one-page site : Cookin' Camp. Cela consiste à présenter les différentes spécialités culinaires que l'on peut déguster en camping ! Ce site introduisait mon apprentissage en Sass.", 'languages': 'HTML, CSS, Sass', 'date': 'Octobre 2023'},
+            {'image': 'images/fluxml.png', 'title': "FluXML", 'description': "Ce projet consiste à afficher les informations d'un flux générées à partir de l'actualité d'aujourd'hui, selon différents thèmes. Ce projet, à réaliser sur 2 semaines, illustre ma découverte avec le langage XML.", 'link': 'https://github.com/OlivierFacelina/XML-Project', 'languages': 'HTML, CSS, PHP, XML, JavaScript', 'date': 'Mars 2023'},
+            {'image': 'images/movieapi.png', 'title': "Search Movie API", 'description': "Ceci est un projet personnel, sans style. Je souhaitais simplement afficher les informations d'un film en fonction de ce que l'on tapait dans la barre de recherche, grâce à une API afin de découvrir comment le système d'API fonctionne.", 'languages': 'HTML, JavaScript', 'date': 'Mars 2023'},
+            {'image': 'images/calendar.png', 'title': "Calendrier PHP", 'description': "J'ai réalisé un calendrier en PHP, peu de temps après avoir vu les bases de ce langage. Ce calendrier marque donc mes premiers pas au sein de ce langage.", 'languages': 'HTML, CSS, PHP', 'date': 'Mars 2023'},
+            {'image': 'images/calculator.png', 'title': "Calculatrice", 'description': "Réalisation d'une calculatrice en vueJS sur une période d'une semaine afin de me familiariser avec ce langage.", 'languages': 'HTML, CSS, vueJS', 'date': 'Février 2023'},
+            {'image': 'images/converter.png', 'title': 'Convertisseur de températures', 'description': "Réalisation d'un système de conversion de températures. Le but était de prendre connaissance de ce que représentent les DOM en JavaScript.", 'languages': 'HTML, CSS, JavaScript', 'date': 'Janvier 2023'},
+            {'image': 'images/shifumi.png', 'title': 'Shifumi en JavaScript', 'description': "Réalisation d'un shifumi en JavaScript par groupe de 4. Le thème nous a été libre de choix, nous avons choisi de le faire sur le football.", 'link': 'https://quentin78zr.github.io/PROJET-JEU/', 'languages': 'HTML, CSS, JavaScript', 'date': 'Janvier 2023'},
+            {'image': 'images/ig.png', 'title': 'Projet Instant Gaming', 'description': "Sur une durée de 2 jours, l'école nous a donné comme projet de reproduire la page d'accueil du site Instant Gaming. C'était un exercice de découverte du code, le but était de se familiariser avec les langages HTML et CSS.", 'link': 'https://olivierfacelina.github.io/Instant-Gaming-Projet/', 'languages': 'HTML, CSS', 'date': 'Décembre 2022'},
         ] %}
 
         {% for project in projects %}
-        <button onclick="openModal({{ loop.index0 }})">
+        <button class="project-button {% if loop.index0 >= 12 %}hidden{% endif %}" onclick="openModal({{ loop.index0 }})">
             <div class="projects__content__image">
                 <img src="{{ asset(project.image) }}" alt="{{ project.title }}">
+                <p>{{project.title}}</p>
             </div>
         </button>
         {% endfor %}
     </div>
+    {% if projects|length > 12 %}
+    <div class="see-more-container">
+        <button id="see-more-button" onclick="showMore()">Voir plus</button>
+        <button id="see-less-button" class="hidden" onclick="showLess()">Afficher moins</button>
+    </div>
+    {% endif %}
+
 
     {% for project in projects %}
     <div class="modal" id="modal-{{ loop.index0 }}">
@@ -40,11 +58,21 @@
                 </div>
                 <div class="modal__body__content__text">
                     <p>{{ project.description }}</p>
-                    <a href="{{ project.link }}">Découvrez le site ici</a>
+                    {% if project.link is defined %}
+                    <a href="{{ project.link }}" target="blank">Découvrez le site ici</a>
+                    {% endif %}
                 </div>
             </div>
-            <h5>Langages utilisés</h5>
-            <p>{{ project.languages }}</p>
+            <div class="modal__body__details">
+                <div>
+                    <h5>Langages utilisés</h5>
+                    <p>{{ project.languages }}</p>
+                </div>
+                <div>
+                    <h5>Date du projet :</h5>
+                    <p>{{ project.date }}</p>
+                </div>
+            </div>
         </div>
         <div class="modal__footer">
             <button class="modal__footer__button" onclick="closeModal({{ loop.index0 }})">Fermer</button>

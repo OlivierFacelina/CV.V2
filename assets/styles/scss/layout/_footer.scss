@@ -30,6 +30,10 @@
       color: $white;
     }
 
+    &__nav a:hover {
+      text-decoration: underline;
+    }
+
     // &__legal {
     //   margin-top: 5vh;
     // }

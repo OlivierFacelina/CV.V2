@@ -2,16 +2,58 @@
 @import '../variable/variable';
 
 .projects {
+  padding-bottom: 5vh;
+  &__title {
+    padding-bottom: 0;
+  }
   h4 {
     text-align: center;
+    margin-bottom: 10vh;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .see-more-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  #see-more-button, #see-less-button {
+      padding: 10px 20px;
+      background-color: $purple;
+      color: $white;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+  }
+
+  #see-more-button:hover, #see-less-button:hover {
+      background-color: $hoverPurple;
+      color: $white;
+  }
+
+  #see-less-button.hidden {
+    display: none;
   }
 
   &__content {
-    @include m.d-flex($justify: center, $align: center, $gap: 5vh);
+    @include m.d-flex($justify: center, $align: center, $gap: 2vh);
     flex-wrap: wrap;
 
     &__image img {
       width: 20vw;
+      cursor: pointer;
+    }
+
+    .project-button {
+      margin: 10px;
+    }
+
+    .project-button.hidden {
+      display: none;
     }
   }
 
@@ -67,6 +109,11 @@
         img {
           width: 15vw;
         }
+      }
+
+      &__details {
+        display: flex;
+        gap: 3vh;
       }
 
       p {
