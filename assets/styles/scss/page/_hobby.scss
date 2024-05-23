@@ -1,0 +1,53 @@
+@use '../mixin/mixin' as m;
+@import '../variable/variable';
+
+.hobbies {
+  padding-bottom: 5vh;
+  &__section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  &__content {
+    box-shadow: 0 4px 12px -2px rgba(232, 228, 228, 0.3);
+    border-radius: 20px;
+    padding: 8px 32px;
+    transition: all 400ms ease;
+    width: fit-content;
+    margin: 0 auto;
+
+    h3 {
+      text-align: center;
+      padding: 3vh 0 5vh 0;
+    }
+
+    &__body {
+      display: flex;
+      align-items: center;
+      gap: 10vh;
+      padding-bottom: 5vh;
+    }
+
+    .chart-container {
+      width: 300px;
+    }
+
+    .details ul li {
+      font-size: 16px;
+      margin: 12px 0;
+      text-transform: uppercase;
+    }
+
+    .details .percentage {
+      font-weight: 700;
+      color: #e63946;
+    }
+  }
+
+  &__content:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 16px -7px rgba(232, 228, 228, 0.3);
+  }
+
+
+}

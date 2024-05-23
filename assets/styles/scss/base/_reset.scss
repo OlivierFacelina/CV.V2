@@ -9,6 +9,7 @@ body {
   height: 100vh;
   background-color: $black;
   color: $white;
+  font-family: "Rubik", sans-serif;
 }
 
 a {
@@ -33,4 +34,8 @@ button {
   -webkit-font-smoothing: inherit;
   -moz-osx-font-smoothing: inherit;
   -webkit-appearance: none;
+}
+
+ul {
+  list-style-type: none;
 }

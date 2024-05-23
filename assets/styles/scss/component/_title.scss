@@ -1,6 +1,6 @@
 @use '../mixin/mixin' as m;
 
-.presentation, .timeline, .hard__skills, .soft__skills, .projects {
+.presentation, .timeline, .hard__skills, .soft__skills, .projects, .hobbies {
   &__title {
     @include m.title();
   }
