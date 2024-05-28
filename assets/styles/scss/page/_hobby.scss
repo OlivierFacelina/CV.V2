@@ -29,16 +29,16 @@
     }
 
     .chart-container {
-      width: 300px;
+      width: 250px;
     }
 
-    .details ul li {
+    .details ul li, .details-travel ul li, .details-language ul li {
       font-size: 16px;
       margin: 12px 0;
       text-transform: uppercase;
     }
 
-    .details .percentage {
+    .details .percentage, .details-travel .percentage, .details-language .percentage {
       font-weight: 700;
       color: #e63946;
     }
@@ -49,5 +49,30 @@
     box-shadow: 0 4px 16px -7px rgba(232, 228, 228, 0.3);
   }
 
+  &__desc {
+    margin-top: 10vh;
+    padding: 10vh;
+    background-color: $grey;
 
+    h2 {
+      text-transform: uppercase;
+    }
+
+    h5 {
+      text-align: center;
+    }
+
+    &__foot, &__tennis, &__formulaone {
+      @include m.d-flex($justify: space-around, $align: center, $gap: 5vh);
+      margin: 10vh 0 10vh 0;
+
+      img {
+        max-width: 600px;
+      }
+    }
+
+    &__tennis, &__formulaone {
+      margin-top: 20vh;
+    }
+  }
 }
