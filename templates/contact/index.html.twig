@@ -1,5 +1,10 @@
 {% extends 'base.html.twig' %}
 
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
+{% endblock %}
+
 {% block title %}{{ parent() }} - Contact{% endblock %}
 
 {% block body %}
@@ -7,8 +12,29 @@
 
 <section class="contact">
     <h2 class="contact__title">Me contacter</h2>
+    {{ form_start(form, {'attr': {'class': 'contact-form'}}) }}
+        <div class="form-row">
+            <div class="col-md-6">
+                {{ form_row(form.firstname) }}
+            </div>
+            <div class="col-md-6">
+                {{ form_row(form.lastname) }}
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col-md-6">
+                {{ form_row(form.subject) }}
+            </div>
+            <div class="col-md-6">
+                {{ form_row(form.email) }}
+            </div>
+        </div>
+        {{ form_row(form.message) }}
+        <div class="form-row">
+            <button class="btn btn-primary">Envoyer</button>
+        </div>
+    {{ form_end(form) }}
 </section>
 
 {{ include('footer.html.twig') }}
 {% endblock %}
-
