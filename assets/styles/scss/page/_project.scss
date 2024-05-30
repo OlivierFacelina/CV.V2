@@ -21,20 +21,6 @@
     margin-top: 20px;
   }
 
-  #see-more-button, #see-less-button {
-      padding: 10px 20px;
-      background-color: $purple;
-      color: $white;
-      border: none;
-      cursor: pointer;
-      border-radius: 5px;
-  }
-
-  #see-more-button:hover, #see-less-button:hover {
-      background-color: $hoverPurple;
-      color: $white;
-  }
-
   #see-less-button.hidden {
     display: none;
   }
