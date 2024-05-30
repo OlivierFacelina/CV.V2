@@ -2,7 +2,7 @@
 @import '../variable/variable';
 
 .hard__skills, .soft__skills {
-  margin-bottom: 5vh;
+  margin-bottom: 10vh;
   &__content {
     margin-top: 3vh;
     @include m.d-flex($justify: center, $align: center, $gap: 5vh);
@@ -26,7 +26,7 @@
       }
     }
 
-    .backend, .frontend, .versioning, .cms, .other {
+    .backend, .frontend, .versioning, .cms, .design, .other {
       display: block;
     }
 
@@ -60,4 +60,10 @@
 .soft__skills {
   background-color: $grey;
   padding-bottom: 10vh;
+
+  &__content {
+    &__btn {
+      width: 80vw;
+    }
+  }
 }
